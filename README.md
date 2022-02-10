@@ -5,11 +5,12 @@ Note: Using hot-reload in this project so it's not suitable for prod
 ## todo(in the project itself)
 - ~~create db with docker-compose~~
 - ~~create table and some data~~
-- db connection
-- endpoints
-- service layer
+- ~~db connection~~
+- ~~endpoints~~
+- ~~service layer~~
 - env file
 - testing
+- fix reponses
 - logs would be cool?
 
 
