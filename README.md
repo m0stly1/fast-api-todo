@@ -10,5 +10,6 @@ Note: Using hot-reload in this project so it's not suitable for prod
 - service layer
 - env file
 - testing
+- logs would be cool?
 
 
