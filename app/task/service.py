@@ -31,7 +31,6 @@ def update_task(request: TaskUpdate):
     if task is None:
         return
 
-    task.title = request.title
     task.status = request.status
     
     session.commit()

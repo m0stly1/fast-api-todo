@@ -8,6 +8,6 @@ CREATE TABLE todo (
     PRIMARY KEY (id)
 );
 
-INSERT INTO todo (title, status) VALUES ("watch The Matrix Resurrections", "todo");
-INSERT INTO todo (title, status) VALUES ("watch The Book of Boba Fett", "doing");
+INSERT INTO todo (title, status) VALUES ("watch The Matrix Resurrections", "not done");
+INSERT INTO todo (title, status) VALUES ("watch The Book of Boba Fett", "not done");
 INSERT INTO todo (title, status) VALUES ("watch The Mandalorian", "done");
