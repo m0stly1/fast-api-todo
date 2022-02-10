@@ -19,3 +19,17 @@ services:
       test: ['CMD', 'mysqladmin', 'ping', '-h', 'db'] ## to wait for the db to start before running the application
       timeout: 20s
       retries: 2
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    environment:
+      DEBUG: 1
+    volumes:
+      - .:/app
+    command: python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    restart: always
+
